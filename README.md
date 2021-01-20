@@ -10,7 +10,7 @@ Android application that provides useful information about Spacex's Starship dev
 * is TFR today
 * list of scheduled road closures
 * list of scheduled Temporary Flight Restrictions - TFR
-* list LabPadre Live streams 
+* list of LabPadre Live streams 
 
 
 ## Build
@@ -23,7 +23,7 @@ git clone https://github.com/markokroselj/starshipX
 * Get API Key  
     Some app functionalities use YouTube API. In order to build the project you need to include it in the project. You can get it from [here](https://developers.google.com/youtube/v3/getting-started). 
  * Include API Key  
-    In the direcotry
+    In the directory 
     ```
     /app/src/main/java/com/markokroselj/starshipx/labPadreCams
     ```
@@ -49,7 +49,7 @@ git clone https://github.com/markokroselj/starshipX
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
     implementation 'com.google.code.gson:gson:2.8.6'
     ```
-    When running the project for the first time you will have to download them. If it does not do it automathicliy, click sync or Reload Gradle Project in the Gradle tab. 
+    When running the project for the first time you will have to download them. If it does not do it automatically, click sync or Reload Gradle Project in the Gradle tab. 
 * To build the apk click Build --> Build bundle(s) - APK(s) --> Build APK(s)
 
 Application requires internet permission 
