@@ -1,11 +1,11 @@
 # StarshipX
- ![Starship](Starship.jpg "Starhip img:Spacex Flicker")
+ ![Starship](Starship.jpg "Starship img:Spacex Flicker")
 
 Android application that provides useful information about Spacex's Starship development in Boca Chica, Texas
 
 ### Version: 0.1 beta
 
-## Feauters 
+## Features 
 * is road closed
 * is TFR today
 * list of scheduled road closures
