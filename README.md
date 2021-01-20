@@ -23,7 +23,7 @@ git clone https://github.com/markokroselj/starshipX
 * Get API Key  
     Some app functionalities use YouTube API. In order to build the project you need to include it in the project. You can get it from [here](https://developers.google.com/youtube/v3/getting-started). 
  * Include API Key  
-    In the direcotry
+    In the directory
     ```
     /app/src/main/java/com/markokroselj/starshipx/labPadreCams
     ```
