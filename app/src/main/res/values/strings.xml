@@ -3,7 +3,9 @@
     <string name="view_all_road_closures">View all road closures</string>
     <string name="view_all_tfrs">View all TFRs</string>
     <string name="tfr_for">TFR for:</string>
-    <string name="loadingString">Loading...</string>
+    <string name="loadingString">Loading…</string>
     <string name="temporary_flight_restrictions">Temporary flight restrictions</string>
     <string name="labpadre_cams">LabPadre Cams</string>
+    <string name="scheduled_road_closures">Scheduled road closures</string>
+    <string name="noRoadClosuresScheduled">There are no road closures scheduled.</string>
 </resources>
