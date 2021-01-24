@@ -1,8 +1,6 @@
 package com.markokroselj.starshipx;
 
 import android.app.Activity;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -15,9 +13,7 @@ import com.markokroselj.starshipx.Tfr.Tfr;
 import com.markokroselj.starshipx.Tfr.TfrInfo;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.lang.ref.WeakReference;
-import java.net.URL;
 
 public class TfrInfoActivity extends AppCompatActivity {
     TextView dateOutput;
@@ -88,48 +84,11 @@ public class TfrInfoActivity extends AppCompatActivity {
             imgUrl = tfrInfo.getImgUrl();
             System.out.println(imgUrl);
             Glide
-                    .with(activity) // replace with 'this' if it's in activity
+                    .with(activity)
                     .load(imgUrl)
                     .asGif()
                     .into(imageView);
             super.onPostExecute(aVoid);
         }
     }
-
-    private class DownLoadImageTask extends AsyncTask<String, Void, Bitmap> {
-        ImageView imageView;
-
-        public DownLoadImageTask(ImageView imageView) {
-            this.imageView = imageView;
-        }
-
-        /*
-            doInBackground(Params... params)
-                Override this method to perform a computation on a background thread.
-         */
-        protected Bitmap doInBackground(String... urls) {
-            String urlOfImage = urls[0];
-            Bitmap logo = null;
-            try {
-                InputStream is = new URL(urlOfImage).openStream();
-                /*
-                    decodeStream(InputStream is)
-                        Decode an input stream into a bitmap.
-                 */
-                logo = BitmapFactory.decodeStream(is);
-            } catch (Exception e) { // Catch the download exception
-                e.printStackTrace();
-            }
-            return logo;
-        }
-
-        /*
-            onPostExecute(Result result)
-                Runs on the UI thread after doInBackground(Params...).
-         */
-        protected void onPostExecute(Bitmap result) {
-            imageView.setImageBitmap(result);
-        }
-    }
-
 }
