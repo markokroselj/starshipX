@@ -1,5 +1,5 @@
 # StarshipX
- ![Starship](Starship.jpg "Starship img:Spacex Flicker")
+ ![Starship](Starship.jpg "Starship img:Spacex Flickr")
 
 Android application that provides useful information about Spacex's Starship development in Boca Chica, Texas
 
@@ -20,27 +20,28 @@ git clone https://github.com/markokroselj/starshipX
 ```
 
 * Open project in Android studio
-* Get API Key  
-    Some app functionalities use YouTube API. In order to build the project you need to include it in the project. You can get it from [here](https://developers.google.com/youtube/v3/getting-started). 
- * Include API Key  
+* Get API Keys 
+    Application uses Youtube and OpenWeather API. In order to build the project you need to include API Key in the project. You can get Yt key from [here](https://developers.google.com/youtube/v3/getting-started) and OpenWeather key from  [here](https://home.openweathermap.org/api_keys). 
+ * Include API Keys  
     In the directory 
     ```
-    /app/src/main/java/com/markokroselj/starshipx/labPadreCams
+    /app/src/main/java/com/markokroselj/starshipx/
     ```
     create file ApiKeys.java and write inside: 
 
     ```java
-    package com.markokroselj.starshipx.labPadreCams;
+    private static final String YT_API_KEY = "YOUR YOUTUBE KEY";
+    private static final String OPEN_WEATHER_API_KEY = "YOUR OPEN WEATHER KEY";
 
-    public class ApiKeys {
-        private final String YT_API_KEY = "YOUR KEY";
+    public static String getYT_API_KEY() {
+        return YT_API_KEY;
+    }
 
-        protected String getYT_API_KEY() {
-            return YT_API_KEY;
-        }
+    public static String getOpenWeatherApiKey() {
+        return OPEN_WEATHER_API_KEY;
     }
     ```
-    Place your API key as the value of YT_API_KEY variable.
+    Place your YT API key as the value of YT_API_KEY variable and OpenWeather key as the value of OPEN_WEATHER_API_KEY variable.
 * Application uses this Gradle dependencies  
     ```Gradle
     implementation 'org.jsoup:jsoup:1.13.1'

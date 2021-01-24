@@ -13,4 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
-/app/src/main/java/com/markokroselj/starshipx/labPadreCams/ApiKeys.java
+/app/src/main/java/com/markokroselj/starshipx/ApiKeys.java
