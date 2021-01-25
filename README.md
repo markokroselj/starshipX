@@ -8,6 +8,7 @@ Android application that provides useful information about Spacex's Starship dev
 ## Features 
 * is road closed
 * is TFR today
+* weather in Boca Chica
 * list of scheduled road closures
 * list of scheduled Temporary Flight Restrictions - TFR
 * list of LabPadre Live streams 
