@@ -14,7 +14,7 @@ public class Main {
     private Double feelsLike;
     @SerializedName("temp_min")
     @Expose
-    private Integer tempMin;
+    private Double tempMin;
     @SerializedName("temp_max")
     @Expose
     private Double tempMax;
@@ -39,7 +39,7 @@ public class Main {
      * @param pressure
      * @param tempMin
      */
-    public Main(Double temp, Double feelsLike, Integer tempMin, Double tempMax, Integer pressure, Integer humidity) {
+    public Main(Double temp, Double feelsLike, Double tempMin, Double tempMax, Integer pressure, Integer humidity) {
         super();
         this.temp = temp;
         this.feelsLike = feelsLike;
@@ -75,15 +75,15 @@ public class Main {
         return this;
     }
 
-    public Integer getTempMin() {
+    public Double getTempMin() {
         return tempMin;
     }
 
-    public void setTempMin(Integer tempMin) {
+    public void setTempMin(Double tempMin) {
         this.tempMin = tempMin;
     }
 
-    public Main withTempMin(Integer tempMin) {
+    public Main withTempMin(Double tempMin) {
         this.tempMin = tempMin;
         return this;
     }
