@@ -40,7 +40,7 @@ public class RoadClosures {
 
     private static String getCurrentDate() {
         Date c = Calendar.getInstance().getTime();
-        SimpleDateFormat df = new SimpleDateFormat("EEEE, MMM d, yyyy", Locale.ENGLISH);
+        SimpleDateFormat df = new SimpleDateFormat("EEEE, MMMM d, yyyy", Locale.ENGLISH);
         return df.format(c);
     }
 
